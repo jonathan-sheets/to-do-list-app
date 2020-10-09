@@ -17,7 +17,8 @@ function newItem() {
 
     // create delete list item button
     let deleteButton = $('<deleteButton></deleteButton>');
-    deleteButton.append(document.createTextNode('X'));
+    // deleteButton.append(document.createTextNode('X'));
+    $(deleteButton).append(document.createTextNode('X'));
     li.append(deleteButton);
 
     // adding delete class to list item so item can be hidden with css
@@ -32,5 +33,5 @@ function newItem() {
 
 // clears form field after add button is clicked
 function clearField() {
-    document.getElementById('input').value = "";
+    $('#input').val("");
 };
